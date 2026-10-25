@@ -18,3 +18,14 @@ barplot(datos, col = "steelblue", main = "Ventas (R)")
 import sys
 print("Hola desde Python Luis!")
 ```
+
+### 3. Cálculo en Julia (llamado desde R)
+
+```{r}
+library(JuliaCall)
+julia <- julia_setup()
+mis_datos <- c(10, 20, 30, 40, 50)
+julia_assign("datos_de_R", mis_datos)
+resultado_julia <- julia_eval("sum(datos_de_R)")
+print(paste("El resultado calculado por Julia es:", resultado_julia))
+```
