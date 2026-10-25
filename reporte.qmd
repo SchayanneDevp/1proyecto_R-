@@ -1,0 +1,20 @@
+---
+title: "Reporte Reproducible"
+format: html
+---
+
+Este es un documento **Quarto**.
+
+### 1. Gráfico en R
+
+```{r}
+datos <- c(10, 20, 15, 30, 25)
+barplot(datos, col = "steelblue", main = "Ventas (R)")
+```
+
+### 2. Cálculo en Python
+
+```{python}
+import sys
+print("Hola desde Python Luis!")
+```
